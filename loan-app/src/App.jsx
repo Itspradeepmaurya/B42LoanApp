@@ -1,3 +1,4 @@
+// <<<<<<< HEAD
 // src/App.jsx
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -158,3 +159,27 @@ const App = () => {
 };
 
 export default App;
+// =======
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Login from './components/Login';
+// import Register from './components/Register';
+// import Dashboard from './components/Dashboard'; // Import Dashboard component
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Routes>
+//           <Route path="/" element={<Login />} />
+//           <Route path="/login" element={<Login />} />
+//           <Route path="/register" element={<Register />} />
+//           <Route path="/dashboard" element={<Dashboard />} /> {/* Add dashboard route */}
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+// >>>>>>> 50f5a7a37b301965018fb62cff09b31c0b8b202e
