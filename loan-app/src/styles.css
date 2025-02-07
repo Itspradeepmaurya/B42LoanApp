@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header and Navigation */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  nav button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Containers */
+  .loan-form-container,
+  .dashboard,
+  .repayment-calendar,
+  .loan-comparison {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Progress Bar for the Form */
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .progress-step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #ddd;
+    transition: border-color 0.3s;
+  }
+  
+  .progress-step.active {
+    border-color: #4caf50;
+  }
+  
+  /* Form Step Animation */
+  .form-step {
+    animation: fadeIn 0.5s;
+  }
+  
+  .form-step form div {
+    margin-bottom: 15px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .form-navigation button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* Progress Bar in Dashboard */
+  .progress-bar-outer {
+    background-color: #eee;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s;
+  }
+  
+  /* Document Status Badge */
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .status-badge.pendingreview {
+    background-color: orange;
+  }
+  
+  .status-badge.approved {
+    background-color: green;
+  }
+  
+  .status-badge.requiresresubmission {
+    background-color: red;
+  }
+  
+  /* Repayment Calendar Table */
+  .repayment-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .repayment-calendar th,
+  .repayment-calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  /* Payment Summary Popup */
+  .payment-summary {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Calculator and Comparison Table */
+  .calculator label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+    
